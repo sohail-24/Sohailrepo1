@@ -124,54 +124,78 @@ body {
 .project-link:hover { text-decoration: underline; }
 
 /* ================= JOURNEY ================= */
-#journey {
-  min-height: 100vh;
-  display: flex;
-  align-items: center;
+/* ================= JOURNEY SECTION ================= */
+
+.journey-section {
+  text-align: center;
 }
 
-/* IMPORTANT FIX: remove background overlay influence */
-#journey::before { display: none; }
-
-.journey-grid {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 3rem;
-  margin-top: 3rem;
-}
-
-.journey-card {
-  background: var(--bg-card);
-  border-radius: 22px;
-  overflow: hidden;
-  border: 1px solid var(--border);
-}
-
-/* 🔥 IMAGE VISIBILITY FIX */
-.journey-card img {
-  display: block;
-  width: 100%;
-  height: 380px;
-  object-fit: cover;
-}
-
-.journey-card p {
-  padding: 1.8rem 1.6rem;
-  font-size: 1rem;
-  font-weight: 500;
+.journey-title {
+  font-size: 2.4rem;
+  margin-bottom: 3rem;
   color: var(--text-main);
 }
 
+.journey-grid {
+  max-width: 1300px;
+  margin: auto;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 3rem;
+}
+
+.journey-card {
+  background: #ffffff;
+  border-radius: 20px;
+  overflow: hidden;
+  box-shadow: 0 20px 45px rgba(0,0,0,0.12);
+  transition: transform 0.35s ease, box-shadow 0.35s ease;
+}
+
+.journey-card:hover {
+  transform: translateY(-12px);
+  box-shadow: 0 30px 60px rgba(0,0,0,0.18);
+}
+
+.journey-card img {
+  width: 100%;
+  height: 360px; /* BIG frames */
+  object-fit: cover;
+}
+
+.journey-content {
+  padding: 2rem;
+  text-align: left;
+}
+
+.journey-content h3 {
+  margin-bottom: 0.8rem;
+  font-size: 1.25rem;
+  color: var(--text-main);
+}
+
+.journey-content p {
+  font-size: 0.95rem;
+  color: var(--text-muted);
+}
+
+/* Responsive */
 @media (max-width: 1024px) {
-  .journey-grid { grid-template-columns: 1fr 1fr; }
-  .journey-card img { height: 320px; }
+  .journey-grid {
+    grid-template-columns: 1fr 1fr;
+  }
 }
 
 @media (max-width: 640px) {
-  #journey { min-height: auto; }
-  .journey-grid { grid-template-columns: 1fr; }
-  .journey-card img { height: 260px; }
+  .journey-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .journey-card img {
+    height: 260px;
+  }
 }
+
 
 /* ================= CONTACT ================= */
 .contact {
