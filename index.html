@@ -70,52 +70,105 @@
 </section>
 
 <!-- ================= PROJECTS ================= -->
-<section id="projects" class="section">
-  <h2>Production & Learning Projects</h2>
-
-  <div class="project">
-    <h3>Kubernetes GitOps Platform</h3>
-    <p>
-      Built a production-style Kubernetes cluster using kubeadm and implemented
-      GitOps-based deployments using ArgoCD. Configured Ingress, DNS routing,
-      and service exposure following real-world practices.
-    </p>
-    <a class="project-link" href="https://github.com/sohail-24/chatapp-gitops" target="_blank">
-      View GitHub →
-    </a>
-  </div>
-
-  <div class="project">
-    <h3>AWS DevOps Automation</h3>
-    <p>
-      Automated AWS infrastructure and DevOps tasks using shell scripting and
-      AWS CLI. Focused on reducing manual effort and improving repeatability
-      for common cloud operations.
-    </p>
-    <a class="project-link" href="https://github.com/sohail-24/aws-devops-automation.git" target="_blank">
-      View GitHub →
-    </a>
-  </div>
-
-  <div class="project">
-    <h3>Terraform EC2 – Production Ready (Remote State with S3 + DynamoDB)</h3>
-    <p>
-      Designed and developed a Django-based School Management System and
-      prepared Kubernetes manifests following a GitOps-friendly repository
-      structure for future production deployment.
-      Built a production-ready AWS EC2 infrastructure using Terraform with remote
-      state management via S3 and state locking using DynamoDB. Implemented secure,
-      keyless access using AWS SSM Session Manager, following enterprise-grade
-      Infrastructure as Code best practices.
-    </p>
-    <a class="project-link" href="https://github.com/sohail-24/terraform-ec2-basic.git" target="_blank">
-      View GitHub →
-    </a>
+<section id="projects" class="section dark projects-dashboard">
+  <h2 class="dashboard-title">Production & Learning Projects</h2>
+  <p class="dashboard-subtitle">
+    Real infrastructure, real workflows, and production‑oriented DevOps ownership.
+  </p>
+   
+   
+  <div class="projects-grid">
+    
+    <!-- Project 1 -->
+    <div class="project-card">
+      <div class="project-header">
+        <h3>Kubernetes GitOps Platform</h3>
+        <span class="status live">ACTIVE</span>
+      </div>
+      
+      <p class="project-desc">
+        Built a production‑style Kubernetes cluster using kubeadm and implemented
+        GitOps‑based deployments using ArgoCD with real Ingress, DNS, and service exposure.
+      </p>
+      
+      <div class="project-meta">
+        <span>🔧 kubeadm</span>
+        <span>📦 Docker</span>
+        <span>☸ Kubernetes</span>
+        <span>🚀 ArgoCD</span>
+        <span>🌐 Ingress</span>
+      </div>
+      
+      <ul class="project-responsibility">
+        <li>Designed cluster architecture and networking</li>
+        <li>Implemented GitOps workflows with auto‑sync</li>
+        <li>Exposed services using NGINX Ingress</li>
+        <li>Prepared TLS and DNS for production readiness</li>
+      </ul>
+      
+      <a href="https://github.com/sohail-24/chatapp-gitops" class="project-action">View GitHub →</a>
+    </div>
+    
+    <!-- Project 2 -->
+    <div class="project-card">
+      <div class="project-header">
+        <h3>AWS DevOps Automation</h3>
+        <span class="status stable">STABLE</span>
+      </div>
+      
+      <p class="project-desc">
+        Automated AWS infrastructure operations using shell scripting and AWS CLI
+        to reduce manual effort and improve repeatability.
+      </p>
+       
+      <div class="project-meta">
+        <span>☁ AWS</span>
+        <span>🧠 IAM</span>
+        <span>📜 Bash</span>
+        <span>⚙ AWS CLI</span>
+      </div>
+      
+      <ul class="project-responsibility">
+        <li>Automated EC2 and IAM operations</li>
+        <li>Improved operational consistency</li>
+        <li>Focused on cost‑aware cloud usage</li>
+      </ul>
+       
+      <a href="https://github.com/sohail-24/aws-devops-automation.git" class="project-action">View GitHub →</a>
+    </div>
+     
+    <!-- Project 3 -->
+    <div class="project-card highlight">
+      <div class="project-header">
+        <h3>Terraform EC2 – Production Ready</h3>
+        <span class="status prod">PRODUCTION READY</span>
+      </div>
+      
+      <p class="project-desc">
+        Built a production‑grade EC2 infrastructure using Terraform with remote
+        state management (S3 + DynamoDB) and secure, keyless access via SSM.
+      </p>
+      
+      <div class="project-meta">
+        <span>🧱 Terraform</span>
+        <span>🗄 S3</span>
+        <span>🔒 DynamoDB</span>
+        <span>🖥 EC2</span>
+        <span>🔐 SSM</span>
+      </div>
+      
+      <ul class="project-responsibility">
+        <li>Implemented remote state & locking</li>
+        <li>Designed secure IAM‑based access</li>
+        <li>Removed SSH keys using SSM</li>
+        <li>Followed enterprise IaC practices</li>
+      </ul>
+      
+      <a href="https://github.com/sohail-24/terraform-ec2-basic.git" class="project-action">View GitHub →</a>
+    </div>
+    
   </div>
 </section>
-
-
-
 <!-- ================= JOURNEY ================= -->
 <section id="journey" class="section journey-section">
   <h2 class="journey-title">Journey & Experiences</h2>
